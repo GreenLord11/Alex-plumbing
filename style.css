@@ -12,27 +12,47 @@ header {
     padding: 20px;
     text-align: center;
 }
-.contact {
-    font-size: 18px;
-    margin-top: 10px;
+header a {
+    color: #ffffff;
+    text-decoration: none;
 }
 main {
     padding: 20px;
 }
-.gallery h2 {
+h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+.about {
+    max-width: 800px;
+    margin: 0 auto;
     text-align: center;
 }
-.images {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 20px;
+.contact {
+    font-size: 18px;
+    margin-top: 10px;
 }
-.images img {
-    max-width: 300px;
+.gallery .images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.gallery figure {
+    background: white;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    text-align: center;
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.gallery figcaption {
+    padding: 10px;
+    font-size: 14px;
 }
 footer {
     background-color: #003366;
